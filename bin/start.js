@@ -3,7 +3,7 @@ require('dotenv').config();
 const isLocal = process.env.NODE_ENV === 'local';
 
 if(isLocal){
-  require('./start-local');
+  module.exports = require('./start-local');
 } else {
-  require('./start-serverless');
+  module.exports = require('./start-serverless');
 }
