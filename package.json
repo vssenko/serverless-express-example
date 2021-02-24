@@ -4,10 +4,12 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/start.js",
+    "start-lambda": "node ./src/lambda.js",
     "sync-db": "node ./bin/syncDb.js",
     "db:migrate": "sequelize db:migrate"
   },
   "dependencies": {
+    "@vendia/serverless-express": "^4.3.2",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "dotenv": "^8.2.0",
